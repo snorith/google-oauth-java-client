@@ -96,9 +96,9 @@ public class ClientParametersAuthentication
 
   public void intercept(HttpRequest request) throws IOException {
     Map<String, Object> data = Data.mapOf(UrlEncodedContent.getContent(request).getData());
-    data.put("client_id", clientId);
+    data.put("clientId", clientId);
     if (clientSecret != null) {
-      data.put("client_secret", clientSecret);
+      data.put("clientSecret", clientSecret);
     }
   }
 

@@ -32,28 +32,28 @@ import com.google.api.client.util.Preconditions;
 public class TokenResponse extends GenericJson {
 
   /** Access token issued by the authorization server. */
-  @Key("access_token")
+  @Key("accessToken")
   private String accessToken;
 
   /**
    * Token type (as specified in <a href="http://tools.ietf.org/html/rfc6749#section-7.1">Access
    * Token Types</a>).
    */
-  @Key("token_type")
+  @Key("tokenType")
   private String tokenType;
 
   /**
    * Lifetime in seconds of the access token (for example 3600 for an hour) or {@code null} for
    * none.
    */
-  @Key("expires_in")
+  @Key("expiresIn")
   private Long expiresInSeconds;
 
   /**
    * Refresh token which can be used to obtain new access tokens using {@link RefreshTokenRequest}
    * or {@code null} for none.
    */
-  @Key("refresh_token")
+  @Key("refreshToken")
   private String refreshToken;
 
   /**

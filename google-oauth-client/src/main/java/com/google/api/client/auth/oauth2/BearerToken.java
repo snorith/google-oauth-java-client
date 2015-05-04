@@ -35,7 +35,7 @@ import java.util.regex.Pattern;
 public class BearerToken {
 
   /** Query and form-encoded parameter name. */
-  static final String PARAM_NAME = "access_token";
+  static final String PARAM_NAME = "accessToken";
 
   /**
    * In case an abnormal HTTP response is received with {@code WWW-Authenticate} header, and its

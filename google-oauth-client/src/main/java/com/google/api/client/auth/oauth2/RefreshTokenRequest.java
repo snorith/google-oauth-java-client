@@ -80,7 +80,7 @@ import java.util.Collection;
 public class RefreshTokenRequest extends TokenRequest {
 
   /** Refresh token issued to the client. */
-  @Key("refresh_token")
+  @Key("refreshToken")
   private String refreshToken;
 
   /**
@@ -91,7 +91,7 @@ public class RefreshTokenRequest extends TokenRequest {
    */
   public RefreshTokenRequest(HttpTransport transport, JsonFactory jsonFactory,
       GenericUrl tokenServerUrl, String refreshToken) {
-    super(transport, jsonFactory, tokenServerUrl, "refresh_token");
+    super(transport, jsonFactory, tokenServerUrl, "refreshToken");
     setRefreshToken(refreshToken);
   }
 
